@@ -28,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 .into(imageView1);
 
         picasso.load(R.drawable.vader)
-                .resize(700, 700)
-                .centerCrop()
+                .transform(new CustomTransformation())
                 .into(imageView2);
     }
 }
